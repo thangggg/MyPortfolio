@@ -1,0 +1,18 @@
+{
+  "name": "my_portfolio",
+  "version": "1.0.0",
+  "description": "Design and responsive My Portfolio Website",
+  "main": "index.js",
+  "homepage": "https://thangggg.github.io/MyPortfolio",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "thangggg",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "node-sass": "^4.14.1"
+  }
+}

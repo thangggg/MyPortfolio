@@ -1,0 +1,25 @@
+/*
+    @project: My Portfolio
+    @Description: Design and responsive my portfolio website
+    @Source & Refer: www.youtube.com/Traversy_Media
+    @Author: thangggg
+    @Date: 5:20 18-10-20
+*/
+
+
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/function';
+
+@import 'base/reset';
+@import 'base/typography';
+
+// @import 'components/';
+
+// @import 'layout/';
+
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/work';
+@import 'pages/contact';
+
