@@ -57,14 +57,14 @@ body {
   left: 0;
   transform: translateY(-50%);
   width: 100%;
-  padding: 0 8vw; }
+  padding: 0 50px; }
   @media screen and (max-width: 768px) {
     .home {
       text-align: center; } }
 
 .namebox__name {
   margin: 10px 0;
-  font-size: 6rem;
+  font-size: 5.5rem;
   font-weight: 500; }
   @media screen and (max-width: 768px) {
     .namebox__name {
@@ -80,7 +80,7 @@ body {
   background-color: #606060;
   margin: 20px 0;
   padding: 0 20px;
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: 400;
   height: auto;
   line-height: 2.5rem; }
