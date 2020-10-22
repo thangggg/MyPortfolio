@@ -9,7 +9,7 @@ body {
     right: 0;    
     width: 100%;
     height: 100%;
-    color: set-text-color($primary-color);
+    color: set-text-color($primary-color) !important;
     &:after{
         content: ' ';
         position: absolute;
