@@ -1,0 +1,53 @@
+/* About CSS */
+.about {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    padding: 0 50px;
+    height: 100vh;
+}
+
+.info__description {
+    font-size: 1.5rem;
+    margin-top: 1.2rem;
+}
+
+.tell-about-me {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    background-color: lighten($primary-color, 5);
+    border-bottom: 3px solid $secondary-color;
+}
+
+@include tablet {
+    .about{
+        .namebox__name {
+            text-align: center;
+            font-size: 3rem;
+        }
+        .namebox__description {
+            text-align: center;
+            font-size: 1.2rem;
+        }
+    } 
+}
+
+@include sm-mobile {
+    .about{
+        .namebox__name {
+            font-size: 2rem;
+        }
+        .namebox__description {
+            font-size: .75rem;
+        }
+    } 
+}
+
+footer {
+    height: 3.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    background-color: darken($primary-color, 5);
+}
+
