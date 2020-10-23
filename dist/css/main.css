@@ -267,12 +267,13 @@ footer {
 #contact {
   padding: 2rem 2rem 3rem 3rem; }
   #contact .contact-me {
-    height: 100px;
-    line-height: 100px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #fff;
     background-color: transparent;
     border: 2px solid #fff;
-    text-align: center;
     font-size: 1.5rem; }
     #contact .contact-me .contact-method {
       color: #eece1a; }
@@ -283,3 +284,14 @@ footer {
       #contact .contact-me:hover .contact-method {
         color: #000;
         transition: all 0.5s ease-out; }
+
+@media screen and (max-width: 768px) {
+  #contact .namebox {
+    text-align: center; }
+    #contact .namebox__name {
+      font-size: 3.5rem; }
+    #contact .namebox__description {
+      font-size: 1.2rem; }
+  #contact .contact-me {
+    font-size: 1rem;
+    margin-top: 30px; } }

@@ -39,7 +39,7 @@
     overflow: hidden;
     display: flex;
     position: fixed;
-    z-index: 2;
+    z-index: -1;
     top: 0;
     &__branding,
     &__nav {
@@ -97,6 +97,7 @@
     }
     
     &.show {
+        z-index: 2;
         .menu__branding,
         .menu__nav {
             transform: translate3d(0, 0, 0);
