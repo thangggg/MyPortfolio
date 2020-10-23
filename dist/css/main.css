@@ -84,7 +84,7 @@ img.image {
 
 /* Menu Button */
 .menu-btn {
-  position: absolute;
+  position: fixed;
   top: 40px;
   right: 40px;
   cursor: pointer;
@@ -187,6 +187,15 @@ img.image {
         transform: translate3d(0, 0, 0); }
       .menu.show__nav {
         transform: translate3d(0, 0, 0); } }
+
+footer {
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  background-color: #373737; }
 
 /* HOME CSS */
 #home {
