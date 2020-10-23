@@ -113,7 +113,7 @@ img.image {
   overflow: hidden;
   display: flex;
   position: fixed;
-  z-index: 2;
+  z-index: -1;
   top: 0; }
   .menu__branding, .menu__nav {
     flex-basis: 50%;
@@ -162,11 +162,13 @@ img.image {
       .menu__nav-link:hover {
         color: #eece1a;
         transition: all 0.5s ease-out; }
-  .menu.show .menu__branding,
-  .menu.show .menu__nav {
-    transform: translate3d(0, 0, 0); }
-  .menu.show .menu__nav-item {
-    transform: translate3d(0, 0, 0); }
+  .menu.show {
+    z-index: 2; }
+    .menu.show .menu__branding,
+    .menu.show .menu__nav {
+      transform: translate3d(0, 0, 0); }
+    .menu.show .menu__nav-item {
+      transform: translate3d(0, 0, 0); }
 
 /* Menu responsive */
 @media screen and (max-width: 768px) {
@@ -238,16 +240,14 @@ footer {
 /* About CSS */
 #about {
   padding: 2rem 2rem 2rem 3rem; }
-
-.info__description {
-  font-size: 1.5rem; }
-
-.tell-about-me {
-  font-size: 1.2rem;
-  padding: 0.5rem;
-  background-color: #515151;
-  border-bottom: 3px solid #eece1a;
-  height: 100%; }
+  #about .info__description {
+    font-size: 1.5rem; }
+  #about .tell-about-me {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    background-color: #515151;
+    border-bottom: 3px solid #eece1a;
+    height: 100%; }
 
 @media screen and (max-width: 768px) {
   #about .namebox__name {
@@ -262,3 +262,24 @@ footer {
     font-size: 2rem; }
   .about .namebox__description {
     font-size: .75rem; } }
+
+/* Contact CSS */
+#contact {
+  padding: 2rem 2rem 3rem 3rem; }
+  #contact .contact-me {
+    height: 100px;
+    line-height: 100px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    text-align: center;
+    font-size: 1.5rem; }
+    #contact .contact-me .contact-method {
+      color: #eece1a; }
+    #contact .contact-me:hover {
+      background-color: #eece1a;
+      color: #000;
+      transition: all 0.5s ease-out; }
+      #contact .contact-me:hover .contact-method {
+        color: #000;
+        transition: all 0.5s ease-out; }
