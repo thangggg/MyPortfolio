@@ -1,6 +1,6 @@
 /* HOME CSS */
 
-.home {
+#home {
     position: absolute;
     top: 50%;
     left: 0;
@@ -28,7 +28,7 @@
 /* Home responsive */
 
 @include tablet {
-    .home {
+    #home {
         text-align: center;
         .namebox__name {
             font-size: 3rem;
@@ -40,7 +40,7 @@
 }
 
 @include md-mobile {
-    .home {
+    #home {
         .namebox__name {
             font-size: 2rem;
         }

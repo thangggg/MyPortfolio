@@ -25,17 +25,21 @@ img {
   width: 100%;
   display: inline-block; }
 
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
 /* Typographic rules */
 body {
   font-family: 'Segoe UI', 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
   line-height: 1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
+  min-height: 100vh;
   color: #fff !important;
-  background-color: #444 !important; }
+  background-color: #444 !important;
+  position: relative; }
   body.bg-img {
     background-image: url("../images/background.jpg");
     background-size: cover;
@@ -104,14 +108,15 @@ img.image {
 
 /* Menu CSS */
 .menu {
-  width: 100%;
   min-height: 100vh;
-  /* Menu Nav, Menu Brading*/
+  width: 100%;
+  overflow: hidden;
   display: flex;
-  overflow: hidden; }
+  position: fixed;
+  z-index: 2;
+  top: 0; }
   .menu__branding, .menu__nav {
     flex-basis: 50%;
-    height: 100vh;
     z-index: 1;
     transition: all 0.5s ease-out; }
   .menu__branding {
@@ -159,31 +164,32 @@ img.image {
         transition: all 0.5s ease-out; }
   .menu.show .menu__branding,
   .menu.show .menu__nav {
-    height: 100vh;
     transform: translate3d(0, 0, 0); }
   .menu.show .menu__nav-item {
     transform: translate3d(0, 0, 0); }
 
 /* Menu responsive */
 @media screen and (max-width: 768px) {
-  .menu__branding {
-    flex-basis: 30%;
-    transform: translate3d(-100%, 0, 0);
-    background-color: rgba(81, 81, 81, 0.7);
-    transition: all 0.5s ease-out; }
-  .menu__nav {
-    flex-basis: 70%;
-    transform: translate3d(100%, 0, 0);
-    transition: all 0.5s ease-out; }
-  .menu.show {
-    flex-direction: column; }
-    .menu.show__branding {
-      transform: translate3d(0, 0, 0); }
-    .menu.show__nav {
-      transform: translate3d(0, 0, 0); } }
+  .menu {
+    display: block; }
+    .menu__branding {
+      height: 30vh;
+      transform: translate3d(-100%, 0, 0);
+      background-color: rgba(81, 81, 81, 0.7);
+      transition: all 0.5s ease-out; }
+    .menu__nav {
+      height: 70vh;
+      transform: translate3d(100%, 0, 0);
+      transition: all 0.5s ease-out; }
+    .menu.show {
+      flex-direction: column; }
+      .menu.show__branding {
+        transform: translate3d(0, 0, 0); }
+      .menu.show__nav {
+        transform: translate3d(0, 0, 0); } }
 
 /* HOME CSS */
-.home {
+#home {
   position: absolute;
   top: 50%;
   left: 0;
@@ -205,33 +211,27 @@ img.image {
 
 /* Home responsive */
 @media screen and (max-width: 768px) {
-  .home {
+  #home {
     text-align: center; }
-    .home .namebox__name {
+    #home .namebox__name {
       font-size: 3rem; }
   .icons__list {
     justify-content: center; } }
 
 @media screen and (max-width: 480px) {
-  .home .namebox__name {
+  #home .namebox__name {
     font-size: 2rem; }
-  .home .namebox__description {
+  #home .namebox__description {
     font-size: 0.75em;
     margin-top: 60px;
     margin-bottom: 60px; } }
 
 /* About CSS */
-.about {
-  position: absolute;
-  top: 4rem;
-  left: 0;
-  width: 100%;
-  padding: 0 50px;
-  height: 100vh; }
+#about {
+  padding: 2rem 2rem 2rem 3rem; }
 
 .info__description {
-  font-size: 1.5rem;
-  margin-top: 1.2rem; }
+  font-size: 1.5rem; }
 
 .tell-about-me {
   font-size: 1.2rem;
@@ -241,10 +241,10 @@ img.image {
   height: 100%; }
 
 @media screen and (max-width: 768px) {
-  .about .namebox__name {
+  #about .namebox__name {
     text-align: center;
     font-size: 3rem; }
-  .about .namebox__description {
+  #about .namebox__description {
     text-align: center;
     font-size: 1.2rem; } }
 
@@ -253,9 +253,3 @@ img.image {
     font-size: 2rem; }
   .about .namebox__description {
     font-size: .75rem; } }
-
-footer {
-  height: 3.5rem;
-  line-height: 3.5rem;
-  text-align: center;
-  background-color: #373737; }
