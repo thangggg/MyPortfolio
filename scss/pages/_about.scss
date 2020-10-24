@@ -17,27 +17,27 @@
 
 
 
-@include tablet {
-    #about{
-        .namebox__name {
-            text-align: center;
-            font-size: 3rem;
-        }
-        .namebox__description {
-            text-align: center;
-            font-size: 1.2rem;
+// @include tablet {
+//     #about{
+//         .namebox__name {
+//             text-align: center;
+//             font-size: 3rem;
+//         }
+//         .namebox__description {
+//             text-align: center;
+//             font-size: 1.2rem;
             
-        }
-    } 
-}
+//         }
+//     } 
+// }
 
-@include sm-mobile {
-    .about{
-        .namebox__name {
-            font-size: 2rem;
-        }
-        .namebox__description {
-            font-size: .75rem;
-        }
-    } 
-}
+// @include sm-mobile {
+//     .about{
+//         .namebox__name {
+//             font-size: 2rem;
+//         }
+//         .namebox__description {
+//             font-size: .75rem;
+//         }
+//     } 
+// }

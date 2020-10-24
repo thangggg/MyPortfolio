@@ -18,3 +18,25 @@
     }
 }
 
+
+@include tablet {
+    .namebox {
+        text-align: center;
+        &__name {
+            font-size: 3rem;
+        }
+        &__description {
+            font-size: 1.2rem;
+        }
+    }  
+}
+
+@include sm-mobile {
+    .namebox__name {
+        font-size: 2rem;
+    }
+    .namebox__description {
+        font-size: .75rem;
+    }
+}
+

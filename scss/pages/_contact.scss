@@ -24,21 +24,3 @@
         }
     }
 }
-
-@include tablet {
-    #contact {
-        .namebox {
-            text-align: center;
-            &__name {
-                font-size: 3.5rem;
-            }
-            &__description {
-                font-size: 1.2rem;
-            }
-        }
-        .contact-me {
-            font-size: 1rem;
-            margin-top: 30px;
-        }
-    }
-}

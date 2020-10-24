@@ -28,26 +28,8 @@
 /* Home responsive */
 
 @include tablet {
-    #home {
-        text-align: center;
-        .namebox__name {
-            font-size: 3rem;
-        }
-    }
-    .icons__list {
+    #home .icons__list {
+        display: flex;
         justify-content: center;
-    }
-}
-
-@include md-mobile {
-    #home {
-        .namebox__name {
-            font-size: 2rem;
-        }
-        .namebox__description{
-            font-size: 0.75em;
-            margin-top: 60px;
-            margin-bottom: 60px;
-        }
     }
 }

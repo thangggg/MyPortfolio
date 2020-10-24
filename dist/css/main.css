@@ -71,6 +71,20 @@ body {
   height: auto;
   line-height: 2.5rem; }
 
+@media screen and (max-width: 768px) {
+  .namebox {
+    text-align: center; }
+    .namebox__name {
+      font-size: 3rem; }
+    .namebox__description {
+      font-size: 1.2rem; } }
+
+@media screen and (max-width: 320px) {
+  .namebox__name {
+    font-size: 2rem; }
+  .namebox__description {
+    font-size: .75rem; } }
+
 img.image {
   border-radius: 50%;
   border: 3px solid #eece1a;
@@ -222,20 +236,9 @@ footer {
 
 /* Home responsive */
 @media screen and (max-width: 768px) {
-  #home {
-    text-align: center; }
-    #home .namebox__name {
-      font-size: 3rem; }
-  .icons__list {
+  #home .icons__list {
+    display: flex;
     justify-content: center; } }
-
-@media screen and (max-width: 480px) {
-  #home .namebox__name {
-    font-size: 2rem; }
-  #home .namebox__description {
-    font-size: 0.75em;
-    margin-top: 60px;
-    margin-bottom: 60px; } }
 
 /* About CSS */
 #about {
@@ -249,19 +252,29 @@ footer {
     border-bottom: 3px solid #eece1a;
     height: 100%; }
 
-@media screen and (max-width: 768px) {
-  #about .namebox__name {
-    text-align: center;
-    font-size: 3rem; }
-  #about .namebox__description {
-    text-align: center;
-    font-size: 1.2rem; } }
-
-@media screen and (max-width: 320px) {
-  .about .namebox__name {
-    font-size: 2rem; }
-  .about .namebox__description {
-    font-size: .75rem; } }
+#work {
+  padding: 2rem 2rem 2rem 3rem; }
+  #work .project-img {
+    border: 3px solid #fff; }
+    #work .project-img:hover {
+      opacity: 0.5;
+      border-color: #eece1a;
+      transition: all 0.5s ease-out; }
+  #work .project-watch, #work .project-github {
+    margin-bottom: 0;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding-left: 15px; }
+    #work .project-watch:hover, #work .project-github:hover {
+      background-color: #eece1a; }
+  #work .project-watch {
+    color: #000;
+    background-color: #b7b7b7; }
+  #work .project-github {
+    color: #fff;
+    background-color: #282828; }
+    #work .project-github:hover {
+      color: #000; }
 
 /* Contact CSS */
 #contact {
@@ -284,14 +297,3 @@ footer {
       #contact .contact-me:hover .contact-method {
         color: #000;
         transition: all 0.5s ease-out; }
-
-@media screen and (max-width: 768px) {
-  #contact .namebox {
-    text-align: center; }
-    #contact .namebox__name {
-      font-size: 3.5rem; }
-    #contact .namebox__description {
-      font-size: 1.2rem; }
-  #contact .contact-me {
-    font-size: 1rem;
-    margin-top: 30px; } }
