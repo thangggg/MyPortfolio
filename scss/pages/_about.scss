@@ -15,3 +15,16 @@
     }
 }
 
+/* About Reponsive*/
+
+@include md-mobile {
+    #about {
+        .info__description {
+            font-size: 1.2em;
+        }
+        
+        .tell-about-me {
+            font-size: 1rem;
+        }
+    }
+}

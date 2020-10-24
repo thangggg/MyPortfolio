@@ -252,6 +252,13 @@ footer {
     border-bottom: 3px solid #eece1a;
     height: 100%; }
 
+/* About Reponsive*/
+@media screen and (max-width: 480px) {
+  #about .info__description {
+    font-size: 1.2em; }
+  #about .tell-about-me {
+    font-size: 1rem; } }
+
 #work {
   padding: 2rem 2rem 2rem 3rem; }
   #work .project-img {
