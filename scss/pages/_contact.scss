@@ -24,3 +24,15 @@
         }
     }
 }
+
+/* Contact Responsive */
+@include desktop {
+    #contact .contact-me {
+        margin-bottom:30px;
+    }
+}
+@include md-mobile {
+    #contact .contact-me{
+        font-size: 1rem;
+    }
+}

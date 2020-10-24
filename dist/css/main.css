@@ -297,3 +297,12 @@ footer {
       #contact .contact-me:hover .contact-method {
         color: #000;
         transition: all 0.5s ease-out; }
+
+/* Contact Responsive */
+@media screen and (max-width: 1024px) {
+  #contact .contact-me {
+    margin-bottom: 30px; } }
+
+@media screen and (max-width: 480px) {
+  #contact .contact-me {
+    font-size: 1rem; } }
